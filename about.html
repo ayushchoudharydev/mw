@@ -100,13 +100,14 @@
           <h3 class="experience-title">Software Engineer</h3>
           <p class="experience-meta">Arizona State University · June 2024 — May 2025 · Tempe, AZ</p>
           <p class="experience-desc">
-<li>Built a secure data migration and curation pipeline to transfer and reconcile student records from legacy systems into cloud data stores, ensuring low downtime and incremental processing. Implemented orchestrated workflows atomic checkpoints schema evolution handling and automated data validation to preserve integrity during cutovers.</li>
 
-<li>Designed a distraction detection microservice for real time media inference by reworking preprocessing batching and inference paths to improve detection speed by 40%. Scaled the processing pipeline to handle burst traffic added backpressure controls and created replayable pipelines for validation and model comparison.</li>
+            <li>Built a secure data migration and curation pipeline using Airflow to transfer and reconcile student records into managed relational and analytics stores, ensuring low downtime and incremental processing. Implemented orchestrated workflows atomic checkpoints schema evolution handling and automated data validation to preserve integrity during cutovers.</li>
 
-<li>Established automated identity and access controls using infrastructure as code to enforce least privilege across development and production. Integrated federated single sign on role based access provisioning and drift detection with audit logging to maintain compliance and speed secure onboarding.</li>
+<li>Designed a distraction detection microservice with a modern frontend and API service running MediaPipe inference on a container platform, improving detection speed by 40%. Reworked preprocessing batching and inference paths added backpressure controls and created replayable pipelines for validation and model comparison.</li>
 
-<li>Architected an agentic retrieval augmented workflow using fine tuned semantic models and vector search to achieve sub 50 ms retrieval latency across datasets. Built streaming indexing relevance scoring and lightweight caching with end to end monitoring to guarantee low latency and retrieval quality for downstream agents.</li>
+<li>Established automated identity and access controls using infrastructure as code and a centralized identity provider to enforce least privilege across development and production. Integrated federated single sign on with OIDC and SAML role based provisioning drift detection and audit logging to maintain compliance and speed secure onboarding.</li>
+
+<li>Architected an agentic retrieval augmented workflow using LangGraph and LangChain with fine tuned semantic models and FAISS vector search on cloud compute instances to achieve sub 50 ms retrieval latency. Built streaming indexing relevance scoring lightweight caching and end to end monitoring to guarantee low latency and retrieval quality for downstream agents.</li>
 
 
 
@@ -120,25 +121,25 @@
           <h3 class="experience-title">Software Developer</h3>
           <p class="experience-meta">Devine Soul · Jan 2021 — Aug 2023 · Vellore, India</p>
           <p class="experience-desc">
-            <li>Built a real time migration and integration pipeline to move critical production traffic from fragile batch paths into a continuous processing flow. I added checkpoints, idempotency, and backpressure to preserve correctness while shrinking request to persistence latency from 5 minutes to 30 seconds under peak load.</li>
+            <li>Built a real time migration and integration pipeline using Kafka for streaming and PostgreSQL for durable sync. I added checkpoints idempotency and backpressure to preserve correctness and cut request to persistence latency from 5 minutes to 30 seconds under peak load.</li>
 
-<li>Owned rollout and operational validation for the migration including phased traffic ramps, traffic shaping, and production verification. I wrote on call runbooks and coordinated cutovers to avoid customer impact while validating data integrity end to end.</li>
+<li>Orchestrated migration workflows and cutovers with Airflow driven jobs and phased traffic ramps. I authored runbooks traffic shaping plans and production verification steps to validate data integrity during rollout.</li>
 
-<li>Developed a production forecasting and capacity planning pipeline that combined scheduled training with accelerated inference and a streaming feature path for near real time updates. The system fed autoscaling decisions and reduced infrastructure compute spend by 14% while meeting accuracy targets.</li>
+<li>Developed a forecasting and capacity pipeline with scheduled training and CUDA accelerated inference for low latency predictions. The streaming feature path fed autoscaling decisions and reduced infrastructure compute spend by 14% while meeting accuracy targets.</li>
 
-<li>Implemented model monitoring, data drift detectors, and automated retraining triggers so forecasts stayed within service level targets. I added production telemetry for model performance and created alerts and dashboards to catch degradation early.</li>
+<li>Implemented model monitoring and data drift detection with production telemetry and alerting. I created automated retraining triggers and dashboards to detect degradation early and keep forecasts within service targets.</li>
 
-<li>Profiled and optimized hot paths across services to reduce contention and improve throughput. Changes included bounded worker pools, adaptive batching, and memory allocation improvements that lowered peak memory pressure and improved tail latency.</li>
+<li>Profiled data and compute hot paths with Spark and low level profiling tools to reduce contention and improve throughput. Changes included adaptive batching bounded worker pools and memory allocation improvements that lowered peak memory pressure and tail latency.</li>
 
-<li>Reworked concurrency primitives and queueing behavior to support sustained parallel work at scale. These changes enabled services to reliably process 150GB of telemetry per day while sustaining hundreds of concurrent execution paths with fewer errors.</li>
+<li>Reworked concurrency primitives and queueing behavior to support sustained parallel work at scale. These improvements enabled reliable processing of 150GB of telemetry per day while sustaining hundreds of concurrent execution paths with fewer errors.</li>
 
-<li>Designed and implemented automated build, test, and release pipelines for containerized services producing reproducible build artifacts. I added over 200 automated integration and regression tests and used staged rollouts like blue green and canary releases to reduce release risk.</li>
+<li>Designed automated build test and release pipelines for containerized services and reproducible artifacts. I added 200+ automated unit tests and used staged rollouts to reduce release risk and manual rollback incidents.</li>
 
-<li>Introduced an intelligent caching layer for high traffic APIs with endpoint specific TTL strategies, cache warming, and graceful fallback to origin with circuit breaking. The cache supported sustained peaks of 4000 requests per second and reduced database load by 57%.</li>
+<li>Introduced a Redis based caching layer with endpoint specific TTL strategies cache warming and graceful fallback with circuit breaking. The cache supported sustained peaks of 4,000 requests per second and reduced database load by 57% while improving p95 latency.</li>
 
-<li>Built full observability for system health by instrumenting end to end latency, thread contention, queue depth, and memory metrics. I created SLO aligned dashboards, alerting, and post incident review processes that fed improvements into the roadmap.</li>
+<li>Built full observability using Prometheus style metrics and Grafana style dashboards to instrument end to end latency thread contention queue depth and memory metrics. I created SLO aligned alerts and post incident review processes that fed roadmap improvements.</li>
 
-<li>Acted as the cross functional technical owner coordinating engineering, product, and SRE stakeholders, mentoring junior engineers, and documenting design decisions and runbooks. Over two years these efforts produced measurable reliability gains and cost reductions.</li>
+<li>Served as cross functional technical owner coordinating engineering product and SRE stakeholders mentoring junior engineers and documenting design decisions and runbooks. Over two years these efforts delivered measurable reliability improvements and cost reductions.</li>
 
           </p>
         </div>
